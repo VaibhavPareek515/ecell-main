@@ -1,18 +1,31 @@
 import './App.css'
-import {Route,Routes} from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import { Home } from './components/Home'
 import { BlogPost } from './components/BlogPost'
 import { Navbar } from './components/Navbar'
+import { Hero } from './components/Hero'
+import { About } from './components/About'
+import { AboutPage } from './components/AboutPage'
+import { TeamPage } from './components/TeamPage'
+import ScrollToTop from './components/ScrollToTop'
+import { AnimatePresence } from 'framer-motion'
+
 
 function App() {
+  const location = useLocation();
 
   return (
     <>
-    <Navbar/>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/blogs/:id' element={<BlogPost/>}/>
-    </Routes>
+      <Navbar />
+      <ScrollToTop />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<Home />} />
+          <Route path='/events' element={<AboutPage />} />
+          <Route path='/team' element={<TeamPage />} />
+          <Route path='/blogs/:id' element={<BlogPost />} />
+        </Routes>
+      </AnimatePresence>
     </>
   )
 }

@@ -1,0 +1,113 @@
+.events {
+    background-color: deepskyblue;
+    padding: 50px 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: translateY(-35px);
+    padding-bottom: 90px;
+}
+
+.events img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 0px 0px rgb(0, 63, 84);
+    -moz-box-shadow: 5px 5px 0px 0px rgb(0, 63, 84);
+    box-shadow: 4px 6px 0px 0px rgb(0, 63, 84);
+    margin: 20px 0;
+}
+
+.events .eventHolder .eventSlider {
+    margin-bottom: 40px;
+}
+
+.events .eventHolder .EventContent {
+    font-size: 1.2rem;
+    color: rgb(0, 88, 117);
+    line-height: 2.3ch;
+}
+
+.events .eventHolder .EventContent p {
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.events .eventHolder h1 {
+    color: rgb(0, 63, 84);
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+
+.events .eventHolder .content a {
+    text-decoration: none;
+}
+
+.events .eventHolder .content button {
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(17, 162, 210);
+    color: rgb(6, 96, 126);
+    /* color: white; */
+    cursor: pointer;
+    font-weight: bold;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    text-decoration: none;
+
+}
+
+.events .eventHolder b {
+    color: rgb(6, 96, 126);
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+@media (min-width:666px) {
+    .events .eventHolder {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .events .eventHolder .section {
+        width: 50%;
+    }
+
+    .events .eventHolder .section h1 {
+        /* font-size: 5vw; */
+        font-size: 5rem;
+    }
+
+    .events .eventHolder .section p {
+        /* font-size: 1.2vw; */
+        font-size: 1.2rem;
+        line-height: 2.3ch;
+    }
+
+    .events .eventHolder .content {
+        padding: 35px 20px;
+    }
+
+    .events img {
+        -webkit-box-shadow: 10px 10px 0px 0px rgb(0, 63, 84);
+        -moz-box-shadow: 10px 10px 0px 0px rgb(0, 63, 84);
+        box-shadow: 10px 10px 0px 0px rgb(0, 63, 84);
+    }
+
+}

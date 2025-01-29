@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import "./css/Home.css"
 
 export const Post = ({d}) => {
     const navigate = useNavigate()
@@ -15,7 +16,7 @@ export const Post = ({d}) => {
 
   return (
     <div onClick={()=>navigate(`/blogs/${d._id}`)} className='Post'>
-        <h1 className="postTitle">{d.title}</h1>
+        <h2 className="postTitle">{d.title}</h2>
         <p className="createdAt">{formatDate(d.CreatedAt)}</p>
     </div>
   )

@@ -1,0 +1,71 @@
+.about {
+    background-color: rgb(96, 244, 96);
+    padding: 50px 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.about .aboutHolder img {
+    border-radius: 40px;
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 0px 0px rgb(2, 73, 2);
+    -moz-box-shadow: 5px 5px 0px 0px rgb(2, 73, 2);
+    box-shadow: 4px 6px 0px 0px rgb(2, 73, 2);
+    margin: 20px 0;
+}
+
+.about .aboutHolder h1 {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: rgb(2, 73, 2);
+}
+
+.about .aboutHolder b {
+    color: rgb(0, 171, 0);
+}
+
+.about .aboutHolder .aboutContent {
+    padding: 0 10px;
+}
+
+.about .aboutHolder .aboutContent p {
+    margin: 10px 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(8, 86, 8);
+    line-height: 2.3ch;
+}
+
+@media (min-width:666px) {
+    .about .aboutHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .about .aboutHolder .section {
+        width: 50%;
+    }
+
+    .about .aboutHolder .content {
+        padding: 35px 20px;
+    }
+
+    .about .aboutHolder .content h1 {
+        /* font-size: 5vw; */
+        font-size: 5rem;
+    }
+
+    .about .aboutHolder .content p {
+        /* font-size: 1.2vw; */
+        font-size: 1.2rem;
+    }
+
+    .about .aboutHolder img {
+        -webkit-box-shadow: 10px 10px 0px 0px rgb(2, 73, 2);
+        -moz-box-shadow: 10px 10px 0px 0px rgb(2, 73, 2);
+        box-shadow: 10px 10px 0px 0px rgb(2, 73, 2);
+    }
+}

@@ -1,0 +1,114 @@
+.mainFooter {
+    background-color: #383433;
+    color: white;
+    padding: 80px 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.mainFooter .mainFHold {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    display: grid;
+    gap: 20px;
+}
+
+.mainFooter .mainFHold .tag {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.mainFooter .mainFHold .tag img {
+    width: 30px;
+    filter: invert();
+}
+
+.mainFooter .mainFHold .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainFooter .mainFHold .social div {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.mainFooter .mainFHold .social div a {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.mainFooter .mainFHold p {
+    color: rgb(225, 223, 223);
+}
+
+.mainFooter .mailSec input {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.mainFooter .mailSec button {
+    font-size: 1.3rem;
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    background-color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.mainFooter .mailSec .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+@media (min-width:666px) {
+    .mainFooter {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .mainFooter .mainFHold {
+        width: 50%;
+    }
+
+    .mainFooter .mainFHold p {
+        width: 80%;
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+    .mainFooter .mainFHold .tag {
+        font-size: 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .mainFooter .mainFHold .tag img {
+        width: 100px;
+    }
+
+    .mainFooter .mainFHold .social {
+        padding: 0 20px;
+    }
+}

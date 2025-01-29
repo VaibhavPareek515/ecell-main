@@ -1,0 +1,88 @@
+.TeamPageMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.TeamPage {
+    padding: 30px 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.TeamPage p {
+    font-size: 1.2rem;
+    line-height: 2.5ch;
+    padding: 10px;
+}
+
+.TeamPage .role {
+    padding: 30px 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.TeamPage .role p {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+}
+
+.TeamPage .ContentImg {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.TeamPage .imgHolder {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    /* background-color: whitesmoke; */
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.TeamPage .imgHolder p {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 1rem;
+}
+
+.TeamPage .imgHolder .teamImg{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.roleImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: .5s transform;
+}
+
+.roleImg:hover{
+    transform: translateY(-5px);
+}
+
+.roleImgHold {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (min-width:666px) {
+    .TeamPage {
+        width: 60%;
+    }
+}
+/* .headTitle {
+    color: red;
+} */
+
